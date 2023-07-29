@@ -1,0 +1,29 @@
+.loadingScreen {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--bg-gradient);
+}
+
+.loadingScreenIcon {
+  width: 30%;
+  height: 30%;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  animation: rotation 2s infinite linear;
+
+}
+
+.loadingGifIcon {
+  width: 10%;
+  max-height: 300px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
